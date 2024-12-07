@@ -39,6 +39,16 @@ class HomeController extends Controller
         ]);
     }
 
+    public function message(Request $request){
+
+        $messages = MessagePresident::where('id', $request->id)->get()->first();
+
+        return view('message', [
+                'message' => $messages
+            ]
+        );
+    }
+
     public function bio(Request $request)
     {
         return view("team-details");
@@ -109,5 +119,10 @@ class HomeController extends Controller
         return view('publication.pdf', [
             'file'=>$request->pdf
         ]);
+    }
+
+    public function framework(): \Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View|\Illuminate\Contracts\Foundation\Application
+    {
+        return view('journal.framework');
     }
 }

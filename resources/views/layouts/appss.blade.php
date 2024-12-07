@@ -32,12 +32,12 @@
 
     <!-- Add your site or application content here -->
     <!-- preloader -->
-    <div id="preloader">
-        <div class="preloader">
-            <span></span>
-            <span></span>
-        </div>
-    </div>
+{{--    <div id="preloader">--}}
+{{--        <div class="preloader">--}}
+{{--            <span></span>--}}
+{{--            <span></span>--}}
+{{--        </div>--}}
+{{--    </div>--}}
     <!-- preloader end  -->
     <!-- header-area start -->
     <header class="head-one">
@@ -57,31 +57,47 @@
                                     <li>
                                         <a href="{{route('home')}}">Home</a>
                                     </li>
+
+
                                     <li>
                                         <a href="{{route('about')}}">About Us</a>
                                     </li>
+
+
+                                    <li>
+                                        <a href="{{route('framework')}}">The Framework</a>
+                                    </li>
+
+                                    <li><a href="{{route('journal.index')}}">The Journal</a></li>
+
+
                                     <li>
                                         <a href="{{route('evenementss')}}">Events</a>
                                     </li>
-                                    <li><a href="#">Membership <i class="far fa-chevron-down"></i></a>
-                                        <ul class="submenu">
-                                            <li><a href="{{route('individual')}}">Individual Membership</a></li>
-                                            <li><a href="{{route('collective')}}">Corporate Membership</a></li>
-                                            <li><a href="{{route('membre')}}">Member Associations</a></li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a href="{{route('certification')}}">Certifications</a>
-                                    </li>
-                                    <li>
-                                        <a class="" href="{{route('journal.index')}}">Journal</a>
-                                    </li>
-                                    <li>
-                                        <a class="" href="{{route('library')}}">Library</a>
-                                    </li>
-                                    <li>
-                                        <a class="" href="{{route('emplois')}}">Job offers</a>
-                                    </li>
+
+                                    <li><a href="{{route('library')}}">Library</a></li>
+
+
+{{--                                    <li><a href="#">Membership <i class="far fa-chevron-down"></i></a>--}}
+{{--                                        <ul class="submenu">--}}
+{{--                                            <li><a href="{{route('individual')}}">Individual Membership</a></li>--}}
+{{--                                            <li><a href="{{route('collective')}}">Corporate Membership</a></li>--}}
+{{--                                            <li><a href="{{route('membre')}}">Member Associations</a></li>--}}
+{{--                                        </ul>--}}
+{{--                                    </li>--}}
+{{--                                    <li>--}}
+{{--                                        <a href="{{url('https://www.education.soril.org')}}">Educations</a>--}}
+{{--                                    </li>--}}
+{{--                                    <li>--}}
+{{--                                        <a href="{{route('certification')}}">Certifications</a>--}}
+{{--                                    </li>--}}
+{{--                                    <li><a href="#">Resources <i class="far fa-chevron-down"></i></a>--}}
+{{--                                        <ul class="submenu">--}}
+
+{{--                                            --}}
+{{--                                            <li><a href="{{route('emplois')}}">Job offers</a></li>--}}
+{{--                                        </ul>--}}
+{{--                                    </li>--}}
                                 </ul>
                             </nav>
                         </div>
@@ -126,31 +142,34 @@
                 <li>
                     <a href="{{route('home')}}">Home</a>
                 </li>
+
                 <li>
                     <a href="{{route('about')}}">About Us</a>
                 </li>
+
+
                 <li>
-                    <a href="{{route('evenementss')}}">Events</a>
+                    <a href="{{route('framework')}}">The Framework</a>
                 </li>
-                <li><a href="#">Membership <i class="far fa-chevron-down"></i></a>
-                    <ul class="submenu">
-                        <li><a href="{{route('individual')}}">Individual Membership</a></li>
-                        <li><a href="{{route('collective')}}">Corporate Membership</a></li>
-                        <li><a href="{{route('membre')}}">Member Associations</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="{{route('certification')}}">Certifications</a>
-                </li>
-                <li>
-                    <a class="" href="{{route('journal.index')}}">Journal</a>
-                </li>
-                <li>
-                    <a class="" href="{{route('library')}}">Library</a>
-                </li>
-                <li>
-                    <a class="" href="{{route('emplois')}}">Job offers</a>
-                </li>
+
+                <li><a href="{{route('journal.index')}}">The Journal</a></li>
+
+                {{--                <li><a href="#">Membership <i class="far fa-chevron-down"></i></a>--}}
+{{--                    <ul class="submenu">--}}
+{{--                        <li><a href="{{route('individual')}}">Individual Membership</a></li>--}}
+{{--                        <li><a href="{{route('collective')}}">Corporate Membership</a></li>--}}
+{{--                        <li><a href="{{route('membre')}}">Member Associations</a></li>--}}
+{{--                    </ul>--}}
+{{--                </li>--}}
+{{--                <li>--}}
+{{--                    <a href="{{route('certification')}}">Certifications</a>--}}
+{{--                </li>--}}
+
+{{--                <li><a href="#">Resources <i class="far fa-chevron-down"></i></a>--}}
+{{--                    <ul class="submenu">--}}
+{{--                        <li><a href="{{route('emplois')}}">Job offers</a></li>--}}
+{{--                    </ul>--}}
+{{--                </li>--}}
             </ul>
         </nav>
     </aside>
@@ -168,17 +187,16 @@
                     <div class="footer__widget footer__widget__02 mb-30">
                         <div class="row">
                             <div class="col-xl-4 col-lg-5 col-md-6 col-4">
-                                
+
                             </div>
                             <div class="col-xl-8 col-lg-7 col-md-6 col-8">
                                  <h6 class="fot-title mb-30">Useful Links</h6>
 
                                 <ul class="fot-list">
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">Individual Members</a></li>
-                                    <li><a href="#">Corporate Members</a></li>
-                                    <li><a href="#">Certification</a></li>
-                                    <li><a href="#">The Journal</a></li>
+                                    <li><a href="{{route('home')}}">Home</a></li>
+                                    <li><a href="{{route('framework')}}">The Framework</a></li>
+                                    <li><a href="{{route('evenementss')}}">Events</a></li>
+                                    <li><a href="{{route('journal.index')}}">The Journal</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -189,10 +207,10 @@
                         <div class="footer__widget--box" style="background-image: url(assets/img/bg/fot-bg-box1.png);">
                             <div class="logo-area">
                                 <a href="{{route('home')}}" class="footer-logo mb-30"><img
-                                        src="assets/img/logo/footer-logo2.png" alt=""></a>
+                                        src="{{asset('assets/img/logo/footer-logo2.png')}}" alt=""></a>
                             </div>
                             <ul class="box-list">
-                                <li><i class="fal fa-envelope"></i> infos@arimas.org</li>
+                                <li><i class="fal fa-envelope"></i> info@soril.org</li>
                                 <li><i class="fal fa-phone"></i> 011 277 583</li>
                                 <li><i class="fal fa-phone"></i> 071 573 4653</li>
                                 <li><i class="fal fa-map-marker-alt"></i> 08, Meadowbrook Lane, Epsom Downs, Sandton</li>
@@ -230,7 +248,7 @@
                                 </div>
                             </div>
                         @empty
-                            
+
                         @endforelse
                     </div>
                 </div>
@@ -242,7 +260,7 @@
                     <div class="col-xl-5 col-lg-4 col-md-8">
                         <div class="fot-nav">
                             <ul class="fot-nav-list">
-                               
+
                             </ul>
                         </div>
                     </div>
